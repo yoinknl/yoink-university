@@ -3,7 +3,14 @@
 This repository contains content for the various videos, courses and workshops created by
 Yoink. 
 
-## Building
+## Building a presentation
+
+* Requires `pandoc` 2.7+ to generate slides.
+* Requires `chokidar` to watch files.
+* run `bin/generate.sh <topic>/<name-of-presentation>` to generate the html file for the presentation located in the `_<topic>/<name-of-presentation>` folder.
+* run `bin/watch.sh <topic>/<name-of-presentation>` to watch for changes in files for the presentation located in the `_<topic>/<name-of-presentation>` folder, and re-generate it automatically.
+
+## Building the site
 
 To build the website, make sure Jekyll is properly installed. macOS's bundled Ruby version is no good.
 
