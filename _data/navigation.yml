@@ -1,0 +1,11 @@
+main:
+  - title: "Yoink"
+    url: https://yoink.nl
+
+side:
+  - title: "Topics"
+    children:
+      - title: "Networking"
+        url: /topic/networking
+      - title: "Programming languages"
+        url: /topic/programming-languages
