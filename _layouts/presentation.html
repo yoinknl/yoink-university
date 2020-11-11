@@ -1,0 +1,16 @@
+---
+layout: single
+---
+<p>
+<a href="slides">Look at the slides</a>
+</p>
+
+{% assign videoid = page.videoid %}
+{% capture check %}({{ videoid }}){% endcapture %}
+
+{% if check == "()" %}
+{% assign videoid = "dQw4w9WgXcQ" %}
+<p>Don't forget to provide a <code>videoid</code> ;)</p>
+{% endif %}
+
+{% include video id=videoid provider="youtube" %}

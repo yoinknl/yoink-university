@@ -32,12 +32,16 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: single
+      layout: presentation
       author_profile: true
       sidebar:
         nav: "side"
       share: true
       related: false
+  - scope:
+      type: pages
+    values:
+      layout: single
 
 collections:
   networking:
