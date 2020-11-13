@@ -25,25 +25,211 @@
     <div class="slides">
 
 
+<section id="typing" class="title-slide slide level1">
+<h1>Typing</h1>
+
+</section>
+
 <section>
-<section id="hello" class="title-slide slide level1">
-<h1>Hello!</h1>
+<section id="what-are-types" class="title-slide slide level1">
+<h1>What are types?</h1>
 
 </section>
-<section id="subslide-1" class="title-slide slide level2">
-<h2>Subslide 1</h2>
+<section id="values" class="slide level2">
+<h2>Values</h2>
+<p><br/></p>
+<ul>
+<li><code>42</code><br/> <br/> </li>
+<li><code>"apple tree"</code><br/> <br/> </li>
+<li><code>true</code><br/> <br/> </li>
+</ul>
+</section>
+<section id="categories" class="slide level2">
+<h2>Categories</h2>
+<p><br/></p>
+<ul>
+<li><code>42</code><br/>number<br/> </li>
+<li><code>"apple tree"</code><br/>text<br/> </li>
+<li><code>true</code><br/>boolean<br/> </li>
+</ul>
+</section>
+<section id="types" class="slide level2">
+<h2>Types</h2>
+<p><br/></p>
+<ul>
+<li><code>42</code><br/><strong>number</strong><br/> </li>
+<li><code>"apple tree"</code><br/><strong>text</strong><br/> </li>
+<li><code>true</code><br/><strong>boolean</strong><br/> </li>
+</ul>
+</section></section>
+<section>
+<section id="why-types" class="title-slide slide level1">
+<h1>Why types?</h1>
 
 </section>
+<section id="what-does-a-language-do-with-types" class="slide level2">
+<h2>What does a language do with types?</h2>
+<ul>
+<li>Nothing</li>
+<li>Differentiate</li>
+<li>Verify</li>
+</ul>
+</section>
+<section id="differentiate" class="slide level2">
+<h2>Differentiate</h2>
+<p>weak typing</p>
+<p>vs</p>
+<p>strong typing</p>
+</section>
+<section id="differentiate-1" class="slide level2">
+<h2>Differentiate</h2>
+<p>weak typing</p>
+<div class="fragment">
+<p>runtime will try to convert</p>
+</div>
+<div class="fragment">
+<p>JavaScript, C</p>
+</div>
+</section>
+<section id="differentiate-2" class="slide level2">
+<h2>Differentiate</h2>
+<p>strong typing</p>
+<div class="fragment">
+<p>runtime will throw errors</p>
+</div>
+<div class="fragment">
+<p>Java, TypeScript, Kotlin, Python</p>
+</div>
+</section>
+<section id="verify" class="slide level2">
+<h2>Verify</h2>
+<p>dynamic typing</p>
+<p>vs</p>
+<p>static typing</p>
+</section>
+<section id="verify-1" class="slide level2">
+<h2>Verify</h2>
+<p>dynamic typing</p>
+<div class="fragment">
+<p>errors are found when the program runs</p>
+</div>
+<div class="fragment">
+<p>Python, JavaScript</p>
+</div>
+</section>
+<section id="verify-2" class="slide level2">
+<h2>Verify</h2>
+<p>static typing</p>
+<div class="fragment">
+<p>errors are found when the program is compiled</p>
+</div>
+<div class="fragment">
+<p>C, Java, TypeScript, Kotlin</p>
+</div>
+</section>
+<section class="slide level2">
 
-<section id="subslide-2" class="title-slide slide level2">
-<h2>Subslide 2</h2>
+<p><img data-src="diagram.png" /></p>
+</section></section>
+<section>
+<section id="which-is-better" class="title-slide slide level1">
+<h1>Which is better?</h1>
 
 </section>
+<section id="ツ_" class="slide level2">
+<h2>¯\_(ツ)_/¯</h2>
 </section>
-<section id="the-end" class="title-slide slide level1">
-<h1>The end</h1>
+<section id="advantages" class="slide level2">
+<h2>Advantages</h2>
+</section>
+<section id="advantages-1" class="slide level2">
+<h2>Advantages</h2>
+<p>weak typing</p>
+<div class="fragment">
+<ul>
+<li>👍 be productive quickly</li>
+<li>👎 find errors late</li>
+<li>👎 error messages are vague</li>
+</ul>
+</div>
+</section>
+<section id="advantages-2" class="slide level2">
+<h2>Advantages</h2>
+<p>static typing</p>
+<div class="fragment">
+<ul>
+<li>👍 code is very clear</li>
+<li>👎 code can be verbose</li>
+</ul>
+</div>
+</section>
+<section id="advantages-3" class="slide level2">
+<h2>Advantages</h2>
+<p>dynamic typing</p>
+<div class="fragment">
+<ul>
+<li>👍 be productive quickly</li>
+<li>👎 find errors late</li>
+</ul>
+</div>
+</section>
+<section id="advantages-4" class="slide level2">
+<h2>Advantages</h2>
+<p>strong typing</p>
+<div class="fragment">
+<ul>
+<li>👍 compiler helps you</li>
+<li>👎 compiler fights you</li>
+</ul>
+</div>
+</section>
+<section id="no-eitheror" class="slide level2">
+<h2>No either/or</h2>
+<p>degrees</p>
+<div class="fragment">
+<p>Java and TypeScript</p>
+<ul>
+<li>both static</li>
+<li>both strong</li>
+<li>TypeScript goes further</li>
+</ul>
+</div>
+</section>
+<section id="no-eitheror-1" class="slide level2">
+<h2>No either/or</h2>
+<p>terminology is vague</p>
+<div class="fragment">
+<ul>
+<li>people mix it up</li>
+<li>I mix it up in this talk</li>
+<li>programming languages mix it up</li>
+</ul>
+</div>
+</section>
+<section id="no-eitheror-2" class="slide level2">
+<h2>No either/or</h2>
+<p>language features</p>
+<div class="fragment">
+<ul>
+<li>duck typing</li>
+<li>extension methods</li>
+<li>implicit conversions</li>
+</ul>
+</div>
+</section>
+<section id="no-eitheror-3" class="slide level2">
+<h2>No either/or</h2>
+<p>boundaries fade</p>
+<div class="fragment">
+<ul>
+<li>JavaScript got TypeScript</li>
+<li>Python got type hints</li>
+</ul>
+</div>
+</section>
+<section class="slide level2">
 
-</section>
+</section></section>
     </div>
   </div>
 
