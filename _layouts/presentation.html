@@ -1,9 +1,11 @@
 ---
 layout: single
 ---
+{% if page.show_slides != false %}
 <p>
 <a href="slides">Look at the slides</a>
 </p>
+{% endif %}
 
 {% assign videoid = page.videoid %}
 {% capture check %}({{ videoid }}){% endcapture %}
