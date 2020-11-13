@@ -5,8 +5,13 @@ Yoink.
 
 ## Building a presentation
 
-* Requires `pandoc` 2.7+ to generate slides.
-* Requires `chokidar` to watch files.
+Make sure pandoc and chokidar are installed:
+
+```
+brew install pandoc
+npm install --global chokidar chokidar-cli
+```
+
 * run `bin/generate.sh <topic>/<name-of-presentation>` to generate the html file for the presentation located in the `_<topic>/<name-of-presentation>` folder.
 * run `bin/watch.sh <topic>/<name-of-presentation>` to watch for changes in files for the presentation located in the `_<topic>/<name-of-presentation>` folder, and re-generate it automatically.
 
