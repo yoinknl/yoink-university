@@ -16,25 +16,28 @@ center: "false"
 
 <br/>
 
-* `42`<br/>&nbsp;<br/>&nbsp;
-* `"cherry tree"`<br/>&nbsp;<br/>&nbsp;
-* `true`<br/>&nbsp;<br/>&nbsp;
+* `42`<br/>&nbsp;
+* `true`<br/>&nbsp;
+* `"cherry tree"`<br/>&nbsp;
+* 🌲<br/>&nbsp;
 
 ## Categories
 
 <br/>
 
-* `42`<br/>number<br/>&nbsp;
-* `"cherry tree"`<br/>text<br/>&nbsp;
-* `true`<br/>boolean<br/>&nbsp;
+* `42`<br/>number
+* `true`<br/>boolean
+* `"cherry tree"`<br/>text
+* 🌲<br/>🌳
 
 ## Types
 
 <br/>
 
-* `42`<br/>**number**<br/>&nbsp;
-* `"cherry tree"`<br/>**text**<br/>&nbsp;
-* `true`<br/>**boolean**<br/>&nbsp;
+* `42`<br/>**number**
+* `true`<br/>**boolean**
+* `"cherry tree"`<br/>**text**
+* 🌲<br/>**🌳**
 
 
 # Why types?
@@ -59,7 +62,15 @@ weak typing
 
 . . .
 
+<br/>
+
+type information is not available at runtime
+
+ ↓
+
 all types can be converted to all other types
+
+<br/>
 
 . . .
 
@@ -71,7 +82,15 @@ strong typing
 
 . . .
 
+<br/>
+
+type information is available at runtime
+
+ ↓
+
 runtime will throw errors
+
+<br/>
 
 . . .
 
@@ -113,6 +132,10 @@ C, Java, TypeScript, Kotlin
 
 ![](diagram.png)
 
+<br/>
+
+<small>[inspired by wiki.c2.com](http://wiki.c2.com/?TypingQuadrant)</small>
+
 # Examples
 
 ## Weak, dynamic
@@ -138,13 +161,13 @@ C
 char s[] = "cherry tree";
 
 
-s + 3                      // "rry tree"    (char[])
-s - 3                      // ""            (char[])
+s + 3                      // "rry tree"     (char[])
+s - 3                      // "" (probably)  (char[])
+                           // (but could be anything)
 
+*s = 42;                   // "*herry tree"  (char[])
 
-*s = 42;                   // "*herry tree" (char[])
-
-int t = "cherry tree";     // Weird big number
+int t = "cherry tree";     // segmentation fault
 ```
 
 ## Strong, dynamic
@@ -201,8 +224,8 @@ weak typing
 . . .
 
 * 👍 be productive quickly
-* 👎 find errors late
 * 👎 error messages are vague
+* 👎 find errors late
 
 ## Advantages
 
@@ -220,6 +243,7 @@ dynamic typing
 . . .
 
 * 👍 be productive quickly
+* 👍 error messages are clear
 * 👎 find errors late
 
 ## Advantages
@@ -251,7 +275,7 @@ terminology is vague
 
 * people mix it up
 * I mix it up in this talk
-* programming languages mix it up
+* programming languages mix it up<br/>
   (Java: `"cherry tree" + 3`)
 
 ## No either/or
@@ -274,3 +298,14 @@ boundaries fade
 * Python got type hints
 
 ---
+
+Summary
+-
+
+* Weak<br/>_no guarantees_
+* Strong<br/>_runtime or compile-time guarantees_<br/>&nbsp;
+* Dynamic<br/>_types can change_
+* Static<br/>_types are always the same_
+
+---
+

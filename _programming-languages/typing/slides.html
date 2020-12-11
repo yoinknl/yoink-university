@@ -101,27 +101,30 @@
 <h2>Values</h2>
 <p><br/></p>
 <ul>
-<li><code>42</code><br/> <br/> </li>
-<li><code>"cherry tree"</code><br/> <br/> </li>
-<li><code>true</code><br/> <br/> </li>
+<li><code>42</code><br/> </li>
+<li><code>true</code><br/> </li>
+<li><code>"cherry tree"</code><br/> </li>
+<li>🌲<br/> </li>
 </ul>
 </section>
 <section id="categories" class="slide level2">
 <h2>Categories</h2>
 <p><br/></p>
 <ul>
-<li><code>42</code><br/>number<br/> </li>
-<li><code>"cherry tree"</code><br/>text<br/> </li>
-<li><code>true</code><br/>boolean<br/> </li>
+<li><code>42</code><br/>number</li>
+<li><code>true</code><br/>boolean</li>
+<li><code>"cherry tree"</code><br/>text</li>
+<li>🌲<br/>🌳</li>
 </ul>
 </section>
 <section id="types" class="slide level2">
 <h2>Types</h2>
 <p><br/></p>
 <ul>
-<li><code>42</code><br/><strong>number</strong><br/> </li>
-<li><code>"cherry tree"</code><br/><strong>text</strong><br/> </li>
-<li><code>true</code><br/><strong>boolean</strong><br/> </li>
+<li><code>42</code><br/><strong>number</strong></li>
+<li><code>true</code><br/><strong>boolean</strong></li>
+<li><code>"cherry tree"</code><br/><strong>text</strong></li>
+<li>🌲<br/><strong>🌳</strong></li>
 </ul>
 </section></section>
 <section>
@@ -147,7 +150,11 @@
 <h2>Differentiate</h2>
 <p>weak typing</p>
 <div class="fragment">
+<p><br/></p>
+<p>type information is not available at runtime</p>
+<p>↓</p>
 <p>all types can be converted to all other types</p>
+<p><br/></p>
 </div>
 <div class="fragment">
 <p>JavaScript, C</p>
@@ -157,7 +164,11 @@
 <h2>Differentiate</h2>
 <p>strong typing</p>
 <div class="fragment">
+<p><br/></p>
+<p>type information is available at runtime</p>
+<p>↓</p>
 <p>runtime will throw errors</p>
+<p><br/></p>
 </div>
 <div class="fragment">
 <p>Java, TypeScript, Kotlin, Python</p>
@@ -192,6 +203,8 @@
 <section class="slide level2">
 
 <p><img data-src="diagram.png" /></p>
+<p><br/></p>
+<p><small><a href="http://wiki.c2.com/?TypingQuadrant">inspired by wiki.c2.com</a></small></p>
 </section></section>
 <section>
 <section id="examples" class="title-slide slide level1">
@@ -216,13 +229,13 @@
 <div class="sourceCode" id="cb2"><pre class="sourceCode c"><code class="sourceCode c"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="dt">char</span> s[] = <span class="st">&quot;cherry tree&quot;</span>;</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>s + <span class="dv">3</span>                      <span class="co">// &quot;rry tree&quot;    (char[])</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a>s - <span class="dv">3</span>                      <span class="co">// &quot;&quot;            (char[])</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>s + <span class="dv">3</span>                      <span class="co">// &quot;rry tree&quot;     (char[])</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a>s - <span class="dv">3</span>                      <span class="co">// &quot;&quot; (probably)  (char[])</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a>                           <span class="co">// (but could be anything)</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true"></a></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true"></a>*s = <span class="dv">42</span>;                   <span class="co">// &quot;*herry tree&quot; (char[])</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true"></a>*s = <span class="dv">42</span>;                   <span class="co">// &quot;*herry tree&quot;  (char[])</span></span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true"></a></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true"></a><span class="dt">int</span> t = <span class="st">&quot;cherry tree&quot;</span>;     <span class="co">// Weird big number</span></span></code></pre></div>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true"></a><span class="dt">int</span> t = <span class="st">&quot;cherry tree&quot;</span>;     <span class="co">// segmentation fault</span></span></code></pre></div>
 </section>
 <section id="strong-dynamic" class="slide level2">
 <h2>Strong, dynamic</h2>
@@ -276,8 +289,8 @@
 <div class="fragment">
 <ul>
 <li>👍 be productive quickly</li>
-<li>👎 find errors late</li>
 <li>👎 error messages are vague</li>
+<li>👎 find errors late</li>
 </ul>
 </div>
 </section>
@@ -297,6 +310,7 @@
 <div class="fragment">
 <ul>
 <li>👍 be productive quickly</li>
+<li>👍 error messages are clear</li>
 <li>👎 find errors late</li>
 </ul>
 </div>
@@ -330,7 +344,7 @@
 <ul>
 <li>people mix it up</li>
 <li>I mix it up in this talk</li>
-<li>programming languages mix it up (Java: <code>"cherry tree" + 3</code>)</li>
+<li>programming languages mix it up<br/> (Java: <code>"cherry tree" + 3</code>)</li>
 </ul>
 </div>
 </section>
@@ -354,6 +368,15 @@
 <li>Python got type hints</li>
 </ul>
 </div>
+</section>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
+<ul>
+<li>Weak<br/><em>no guarantees</em></li>
+<li>Strong<br/><em>runtime or compile-time guarantees</em><br/> </li>
+<li>Dynamic<br/><em>types can change</em></li>
+<li>Static<br/><em>types are always the same</em></li>
+</ul>
 </section>
 <section class="slide level2">
 
