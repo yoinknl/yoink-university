@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Typing</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/white.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="runtimes" class="title-slide slide level1">
+<h1>Runtimes</h1>
+
+</section>
+
+<section>
+<section id="how-does-a-language-work" class="title-slide slide level1">
+<h1>How does a language work?</h1>
+
+</section>
+<section id="in-general" class="slide level2">
+<h2>In general</h2>
+<ul>
+<li>Analysis</li>
+<li>Translation</li>
+<li>Execution</li>
+</ul>
+<p><br/></p>
+<p><small>* these are not the technical terms</small></p>
+</section>
+<section id="analysis" class="slide level2">
+<h2>Analysis</h2>
+<p>Is the code valid?</p>
+<div class="fragment">
+<p><br/></p>
+<p><small>technical term: tokenize, parse</small></p>
+</div>
+</section>
+<section id="translation" class="slide level2">
+<h2>Translation</h2>
+<p>Turn it into 1s and 0s</p>
+<div class="fragment">
+<p><br/></p>
+<p><small>technical term: compile</small></p>
+</div>
+</section>
+<section id="execution" class="slide level2">
+<h2>Execution</h2>
+<p>Run the program</p>
+</section>
+<section id="two-types" class="slide level2">
+<h2>Two types</h2>
+<p>interpreted</p>
+<p>vs</p>
+<p>compiled</p>
+</section>
+<section id="three-types" class="slide level2">
+<h2>Three types</h2>
+<p>interpreted</p>
+<p>vs</p>
+<p>compiled</p>
+<p>vs</p>
+<p>intermediate</p>
+</section></section>
+<section>
+<section id="interpreted-languages" class="title-slide slide level1">
+<h1>Interpreted languages</h1>
+
+</section>
+<section id="how" class="slide level2">
+<h2>How?</h2>
+<p>Run the program:</p>
+<p>Analysis + translation + execution</p>
+</section>
+<section id="pros-cons" class="slide level2">
+<h2>Pros &amp; Cons</h2>
+<ul>
+<li>👍 Fast development</li>
+<li>👍 Platform-independent</li>
+<li>👎 Slow</li>
+</ul>
+</section>
+<section id="use-cases" class="slide level2">
+<h2>Use cases</h2>
+<ul>
+<li>Scripting</li>
+<li>Prototyping</li>
+<li>Simple web backend</li>
+</ul>
+</section>
+<section id="languages" class="slide level2">
+<h2>Languages</h2>
+<ul>
+<li>JavaScript</li>
+<li>Python</li>
+<li>R</li>
+</ul>
+</section></section>
+<section>
+<section id="compiled-languages" class="title-slide slide level1">
+<h1>Compiled languages</h1>
+
+</section>
+<section id="how-1" class="slide level2">
+<h2>How?</h2>
+<p>Compile the program:</p>
+<p>Analysis + translation</p>
+<p><br/></p>
+<p>Run the program:</p>
+<p>Execution</p>
+<p><br/></p>
+<p><small>also called: native</small></p>
+</section>
+<section id="pros-cons-1" class="slide level2">
+<h2>Pros &amp; Cons</h2>
+<ul>
+<li>👍 Compiled programs are fast</li>
+<li>👎 Compilation slows development</li>
+<li>👎 Programs are platform-dependent</li>
+</ul>
+</section>
+<section id="use-cases-1" class="slide level2">
+<h2>Use cases</h2>
+<ul>
+<li>Operating systems</li>
+<li>Mobile apps</li>
+<li>Embedded systems</li>
+<li>Real-time sytems</li>
+<li>Command-line tools</li>
+</ul>
+</section>
+<section id="languages-1" class="slide level2">
+<h2>Languages</h2>
+<ul>
+<li>C</li>
+<li>C++</li>
+<li>Go</li>
+<li>Rust</li>
+</ul>
+</section></section>
+<section>
+<section id="intermediate" class="title-slide slide level1">
+<h1>Intermediate</h1>
+
+</section>
+<section id="how-2" class="slide level2">
+<h2>How?</h2>
+<p>Compile the program:</p>
+<p>Analysis + translation</p>
+<p><small>(to intermediate code)</small></p>
+<p><br/></p>
+<p>Run the program:</p>
+<p>Analysis + translation + execution</p>
+<p><small>(of intermediate code)</small></p>
+</section>
+<section id="pros-cons-2" class="slide level2">
+<h2>Pros &amp; Cons</h2>
+<ul>
+<li>👍 Execution is almost as fast as compiled</li>
+<li>👍 Platform-independent</li>
+<li>👎 Compilation slows development</li>
+</ul>
+</section>
+<section id="use-cases-2" class="slide level2">
+<h2>Use cases</h2>
+<ul>
+<li>Enterprise systems</li>
+<li>Large web backends</li>
+<li>Mobile apps</li>
+</ul>
+</section>
+<section id="languages-2" class="slide level2">
+<h2>Languages</h2>
+<ul>
+<li>Java, Kotlin, Scala: JVM bytecode</li>
+<li>C#, F#: Intermediate Language</li>
+</ul>
+</section></section>
+<section>
+<section id="intermediate-web-edition" class="title-slide slide level1">
+<h1>Intermediate:<br/>web edition</h1>
+
+</section>
+<section id="how-3" class="slide level2">
+<h2>How?</h2>
+<p>JavaScript becomes the intermediate language</p>
+<ul>
+<li>TypeScript</li>
+<li>Scala.js</li>
+<li>Kotlin/JS</li>
+</ul>
+</section>
+<section id="how-4" class="slide level2">
+<h2>How?</h2>
+<p>WebAssembly becomes the intermediate language</p>
+<ul>
+<li>C</li>
+<li>C++</li>
+<li>Go</li>
+<li>Rust</li>
+</ul>
+</section>
+<section id="boundaries-fade" class="slide level2">
+<h2>Boundaries fade</h2>
+<ul>
+<li class="fragment">
+Interpreted → intermediate<br/>
+<ul>
+<li>
+Python (pyc)
+</li>
+</ul>
+</li>
+<li class="fragment">
+Interpreted → native
+<ul>
+<li>
+Cython
+</li>
+</ul>
+</li>
+<li class="fragment">
+Intermediate → native
+<ul>
+<li>
+Scala Native
+</li>
+<li>
+Kotlin/Native
+</li>
+</ul>
+</li>
+<li class="fragment">
+Intermediate → interpreted
+<ul>
+<li>
+Scala as a scripting language
+</li>
+<li>
+JShell
+</li>
+</ul>
+</li>
+</section>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
+<ul>
+<li class="fragment">
+Interpreted languages
+<ul>
+<li>
+no compilation
+</li>
+<li>
+start from scratch every time
+</li>
+</ul>
+</li>
+<li class="fragment">
+Compiled languages
+<ul>
+<li>
+save translation
+</li>
+<li>
+run it many times
+</li>
+</ul>
+</li>
+<li class="fragment">
+Intermediate languages
+<ul>
+<li>
+best of both worlds
+</li>
+<li>
+also worst of both worlds
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="slide level2">
+
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  // reveal.js plugins
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: false,
+        // Display a presentation progress bar
+        progress: false,
+        // Push each slide change to the browser history
+        history: true,
+        // Enable keyboard shortcuts for navigation
+        keyboard: {39:'next',37:'prev',48:()=>{Reveal.slide(0,0,0)}},
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
