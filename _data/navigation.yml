@@ -9,3 +9,8 @@ side:
         url: /topic/networking
       - title: "Programming languages"
         url: /topic/programming-languages
+  - title: "Other"
+    children:
+      - title: "Talks"
+        url: /topic/talks
+

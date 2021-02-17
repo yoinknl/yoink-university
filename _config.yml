@@ -50,6 +50,9 @@ collections:
   programming-languages:
     output: true
     permalink: /topic/:collection/:path/
+  talks:
+    output: true
+    permalink: /topic/:collection/:path/
 
 # Build settings
 remote_theme: mmistakes/minimal-mistakes@4.21.0
