@@ -1,7 +1,7 @@
 ---
 published: false
 pagetitle: Typing
-theme: white
+theme: black
 backgroundTransition: none
 transition: none
 progress: "false"
