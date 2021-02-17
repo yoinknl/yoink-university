@@ -7,7 +7,7 @@ if [ -z "$PRESENTATION" ]; then
 fi
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-ASSETS_DIR="$SCRIPT_DIR/../assets"
+ASSETS_DIR="../../../assets"
 SOURCES_DIR="$SCRIPT_DIR/../$PRESENTATION"
 
 # My Logitech Spotlight only sends arrow-right and arrow-left which move right and left. We want the Spotlight to move down and up instead. This fixes that:
